@@ -9,7 +9,7 @@ unsigned short ReadPersonAge() //ввод возраста
 {
     unsigned short age;
 
-    cout << "Введите возраст \n";
+    cout << "input age \n";
     cin >> age;
     return age;
 }
@@ -17,7 +17,7 @@ unsigned short ReadPersonAge() //ввод возраста
 string ReadPersonName() //ввод имени
 {
     string name;
-    cout << "Введите имя \n";
+    cout << "input name \n";
     cin >> name;
     return name;
 }
@@ -26,19 +26,19 @@ unsigned short Height;//глобальное объявление
 
 void ReadPersonHeight() //ввод роста
 {
-    cout << "Введите рост \n";
+    cout << "input height \n";
     cin >> Height;
 }
 
 void ReadPersonWeight(unsigned short& weight)//чтение веса по ссылке
 {
-    cout << "Введите вес \n";
+    cout << "input weight \n";
     cin >> weight;
 }
 
 void ReadPersonSalary(double* sal) //ввод зар.платы (указатель*)
 {
-    cout << "Введите зар.плату \n";
+    cout << "input salary \n";
     cin >> *sal;
 }
 
@@ -66,18 +66,18 @@ string sale;
 void WritePersonData(const string& name, const unsigned short* age,
     const string& height = "", const string& weight = "")//вывод всей инфы
 {
-    cout << "\nИмя :  " << name
-        << "\nВозраст:  " << *age
-        << "\nРост: " << height
-        << "\nВес: " << weight
-        << "\nЗар. плата  " << sale << "руб.";
+    cout << "\nname :  " << name
+        << "\nage:  " << *age
+        << "\nheight: " << height
+        << "\nweight: " << weight
+        << "\nsalary  " << sale << "Rub.";
 }
 
 
 #ifndef DO_NOT_DEFINE_MAIN
 int main()
 {
-    setlocale(0, "");
+    //setlocale(0, "");
     string name;
     unsigned short age, high, weight;
     double sal;
