@@ -140,8 +140,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ReadPersonAge.cpp" />
-    <ClCompile Include="ReadPersonData.cpp" />
     <ClCompile Include="ReadPersonData1.cpp" />
+    <ClCompile Include="ReadPersonData2.cpp" />
     <ClCompile Include="ReadPersonHeight.cpp" />
     <ClCompile Include="ReadPersonName.cpp" />
     <ClCompile Include="ReadPersonSalary.cpp" />

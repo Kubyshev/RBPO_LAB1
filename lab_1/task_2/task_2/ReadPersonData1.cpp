@@ -3,21 +3,13 @@
 #include <string>
 
 using namespace std;
-
-extern unsigned short Height;
-
 string ReadPersonName();
 unsigned short ReadPersonAge();
-void ReadPersonWeight(unsigned short& weight);
-void ReadPersonHeight();
+void ReadPersonSalary(double* sal);
 
-void ReadPersonData(string& name, unsigned short& age, unsigned short& high, unsigned short& weight)
-
+void ReadPersonData(string& name, unsigned short& age, double& salary)
 {
     name = ReadPersonName();
     age = ReadPersonAge();
-    ReadPersonHeight();
-    high = Height;
-    ReadPersonWeight(weight);
-
+    ReadPersonSalary(&salary);
 }
